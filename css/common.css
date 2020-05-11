@@ -1,0 +1,873 @@
+@font-face {
+    font-family: "bdfont";
+    src: url("../bdfont.eot");
+    /* IE9 */
+    src: url("../bdfont/bdfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../bdfont/bdfont.woff") format("woff"), /* chrome、firefox */
+    url("../bdfont/bdfont.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("../bdfont/bdfont.svg#uxfonteditor") format("svg");
+    /* iOS 4.1- */
+}
+
+
+/* 快捷导航 */
+
+.shortcut {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fff;
+    z-index: 3000;
+    position: relative;
+}
+
+.shortcut .fr1 {
+    float: right;
+}
+
+.shortcut .fr1 ul li {
+    float: left;
+    margin-right: 22px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.shortcut .fr1 ul li:hover {
+    text-decoration: underline;
+}
+
+#last {
+    margin-right: 15px;
+}
+
+#last::before {
+    font-family: "bdfont";
+    content: "\e001";
+    font-size: 20px;
+}
+
+.icon-triangle-down {
+    position: relative;
+    top: 10px;
+    left: 1px;
+    border-top: 4px solid #8b8c8c;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.shortcut .fr1 ul li a {
+    color: #333;
+}
+
+.separator {
+    float: right;
+    height: 12px;
+    margin: 10px 25px 10px 25px;
+    border-right: 1px solid #ebebeb;
+}
+
+.shortcut .fr2 {
+    float: right;
+}
+
+.shortcut .fr2 ul li {
+    float: left;
+    margin-left: 22px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.shortcut .fr2 ul li a {
+    color: #333;
+}
+
+.shortcut .fr2 .baike {
+    text-decoration: none;
+    color: #666;
+}
+
+
+/* header头部模块 */
+
+.header {
+    position: relative;
+    height: 104px;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.layout {
+    position: relative;
+    margin: 0 auto;
+    width: 1139px;
+}
+
+.logo {
+    left: 110px;
+    position: absolute;
+    top: 20px;
+    width: 135px;
+    height: 65px;
+}
+
+.logo a {
+    display: block;
+    width: 135px;
+    height: 65px;
+    background: url(../images/logo.gif);
+    background-size: contain;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    left: 271px;
+    top: 34px;
+    bottom: 23px;
+    width: 639px;
+    height: 40px;
+    border: 1px solid #4791ff;
+}
+
+.search input {
+    float: left;
+    width: 534px;
+    height: 38px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.search button {
+    position: absolute;
+    width: 104px;
+    height: 39px;
+    background-color: #4791ff;
+    font-size: 16px;
+    color: #fff;
+}
+
+.button1 {
+    position: absolute;
+    top: 34px;
+    bottom: 23px;
+    width: 103px;
+    height: 40px;
+    left: 915px;
+    border: 1px solid #4791ff;
+    background-color: #fff;
+    color: #4791ff;
+    font-size: 17px;
+}
+
+.help {
+    position: absolute;
+    left: 1031px;
+    top: 54px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.help a {
+    color: #000;
+}
+
+.game {
+    position: absolute;
+    left: 1092px;
+    top: 17px;
+}
+
+
+/* nav模块 */
+
+#menu {
+    height: 43px;
+    border-top: 1px solid #5895d5;
+    border-bottom: 1px solid #3b92e9;
+    background: #459df5;
+}
+
+#menu .nav {
+    margin: 0 auto;
+    width: 1239px;
+}
+
+#menu ul {
+    list-style: none;
+    z-index: 2;
+}
+
+#menu ul li {
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    width: 120px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 120px;
+    font-size: 16px;
+}
+
+#menu li a:hover {
+    color: #FFF;
+    background-color: #3381d1;
+}
+
+#menu ul li ul li {
+    float: none;
+    border-left: none;
+    background-color: #19508b;
+}
+
+#menu ul li ul {
+    display: none;
+    width: 90px;
+    position: absolute;
+}
+
+#menu ul li ul a {
+    color: #99c3ed;
+    font-size: 14px;
+}
+
+#menu ul li ul a:hover {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+.usercenter {
+    margin-left: 200px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    padding-left: 30px;
+}
+
+.usercenter::before {
+    padding-left: 30px;
+    font-family: "bdfont";
+    content: "\e002";
+    font-size: 20px;
+    float: left;
+    color: #fff;
+}
+
+
+/* container模块 */
+
+.container {
+    overflow: hidden;
+    position: relative;
+    height: 285px;
+    background: #0A318A;
+}
+
+.container .large {
+    width: 935px;
+    margin: auto;
+    position: relative;
+    height: 100%;
+}
+
+.slogen1 {
+    width: 140px;
+    height: 55px;
+    background: url(https://baikebcs.bdimg.com/front-end/second-know/img/logo.png) no-repeat;
+    background-size: contain;
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-top: -27.5px;
+}
+
+.sl-player {
+    *zoom: 1;
+    width: 653px;
+    height: 225px;
+    margin-left: 25px;
+    background: #06122F;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    border-radius: 0 4px 4px 0;
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-top: -112.5px;
+    overflow: hidden;
+}
+
+.sl-player img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sl-slogen {
+    width: 90px;
+    height: 70px;
+    background: url(https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/secondsKnowLarge/img/sub-slogen_cef21db.svg) no-repeat center;
+    background-size: contain;
+    margin-left: 25px;
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-top: -35px;
+}
+
+
+/* 特色词条 */
+
+.poster {
+    width: 1137px;
+    height: 557px;
+    background: #FFF;
+    margin: 20px auto 14px;
+    border: solid 1px #E5E5E5;
+    box-shadow: 0 2px 3px -2px #d5d5d5;
+    font-family: arial, tahoma, 'Microsoft Yahei', '\5b8b\4f53', sans-serif;
+    position: relative;
+    padding: 29px 0;
+}
+
+.poster .excellent-icon {
+    display: block;
+    width: 47px;
+    height: 89px;
+    position: absolute;
+    top: 0px;
+    left: -47px;
+    z-index: 1;
+    background: url(../images/special.png);
+}
+
+.poster .poster-left {
+    padding-left: 29px;
+    float: left;
+    width: 790px;
+    height: 497px;
+    color: #333;
+    position: relative;
+}
+
+.poster .poster-left .poster-top {
+    width: 790px;
+    height: 392px;
+}
+
+.poster .poster-left .poster-top .poster-top-header {
+    height: 46px;
+    width: 700px;
+}
+
+.poster .poster-left .poster-top .poster-top-header h1 {
+    float: left;
+    line-height: 1.15;
+    font-weight: 400;
+    font-size: 38px;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.poster .poster-left .poster-top .poster-top-header div {
+    float: left;
+    width: 62px;
+    height: 28px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 8px;
+    margin-top: 24px;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    outline: 0;
+    line-height: 28px;
+    font-size: 12px;
+    color: #136ec2;
+}
+
+.poster-top-header div a {
+    color: #52a3f5;
+}
+
+.bianji::before {
+    font-family: "bdfont";
+    content: "\e007";
+    color: #136ec2;
+    margin: 8px;
+    margin-right: 5px;
+}
+
+.taolun::before {
+    font-family: "bdfont";
+    content: "\e005";
+    color: #136ec2;
+    margin: 8px;
+    margin-right: 5px;
+}
+
+.shangchuan::before {
+    font-family: "bdfont";
+    content: "\e003";
+    color: #136ec2;
+    margin: 8px;
+    margin-right: 5px;
+}
+
+.poster .poster-left .poster-top .poster-top-header .shangchuan {
+    width: 80px;
+}
+
+.h3t {
+    margin-top: 20px;
+}
+
+.h3t h3 {
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lemma-summary {
+    margin-top: 15px;
+    clear: both;
+    font-size: 14px;
+    word-wrap: break-word;
+    color: #333;
+    margin-bottom: 15px;
+    text-indent: 2em;
+    line-height: 24px;
+    zoom: 1;
+}
+
+.poster .poster-right {
+    float: right;
+}
+
+.summary-pic {
+    overflow: hidden;
+    max-height: 362px;
+    margin-right: 20px;
+    position: relative;
+    border-top: 1px solid #E5E5E5;
+    border-right: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+}
+
+.picAlbumBtn {
+    position: absolute;
+    background: rgba(0, 0, 0, .65);
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    line-height: 1;
+    font-family: arial, tahoma, 'Microsoft Yahei', '\5b8b\4f53', sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 56px;
+    padding: 5px;
+    color: white;
+}
+
+.picAlbumBtn:hover {
+    background-color: #a0a0a0;
+}
+
+.picAlbumBtn::before {
+    font-family: "bdfont";
+    content: "\e007";
+    margin-right: 2px;
+}
+
+
+/* 侧边分享栏 */
+
+.share {
+    width: 45px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
+
+.share .title {
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #6fb6fd;
+    border-left: 1px solid #64aaf1;
+    border-right: 1px solid #64aaf1;
+    border-top: 1px solid #64aaf1;
+}
+
+.share .side-border {
+    height: 158px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.share .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #6fb6fd transparent transparent;
+}
+
+.share .side-border .share-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.share .side-border .qzone::before {
+    font-family: "bdfont";
+    content: '\e012';
+    font-size: 40px;
+    padding-left: 12px;
+    margin-top: -15px;
+    position: absolute;
+    color: #999999;
+}
+
+.share .side-border .weibo::before {
+    font-family: "bdfont";
+    content: '\e010';
+    font-size: 40px;
+    padding-left: 12px;
+    margin-top: 20px;
+    position: absolute;
+    color: #999999;
+}
+
+.share .side-border .wechat::before {
+    font-family: "bdfont";
+    content: '\e011';
+    font-size: 40px;
+    padding-left: 12px;
+    margin-top: 55px;
+    position: absolute;
+    color: #999999;
+}
+
+.share .side-border .qq::before {
+    font-family: "bdfont";
+    content: '\e014';
+    font-size: 40px;
+    padding-left: 12px;
+    margin-top: 90px;
+    position: absolute;
+    color: #999999;
+}
+
+
+/* 顶部导航栏 */
+
+.seach-header {
+    z-index: 2;
+    margin: 0 auto;
+    height: 66px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0px;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: 0 0 5px #888;
+    width: 100%;
+}
+
+.-layout {
+    position: relative;
+    margin: 0 auto;
+    width: 1139px;
+}
+
+.-logo {
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 135px;
+    height: 65px;
+}
+
+.-logo a {
+    display: block;
+    width: 135px;
+    height: 60px;
+    background: url(../images/logo1.gif);
+    background-size: contain;
+    font-size: 0;
+}
+
+.-search {
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    bottom: 23px;
+    width: 639px;
+    height: 34px;
+    border: 1px solid #4791ff;
+}
+
+.-search input {
+    float: left;
+    width: 534px;
+    height: 32px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.-search button {
+    position: absolute;
+    width: 104px;
+    height: 32px;
+    background-color: #4791ff;
+    font-size: 16px;
+    color: #fff;
+}
+
+.toosbutton {
+    float: right;
+}
+
+.toosbutton ul li {
+    float: left;
+    height: 65px;
+    line-height: 65px;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+.toosbutton ul li a {
+    color: #999999;
+}
+
+.toosbutton ul .t1::before {
+    font-family: "bdfont";
+    content: '\e007';
+    font-size: 20px;
+    color: #999999;
+    padding-right: 5px;
+}
+
+.toosbutton ul .t2::before {
+    font-family: "bdfont";
+    content: '\e00b';
+    font-size: 15px;
+    color: #999999;
+    padding-right: 5px;
+}
+
+.toosbutton ul .t3::before {
+    font-family: "bdfont";
+    content: '\e009';
+    font-size: 20px;
+    color: #999999;
+    padding-right: 5px;
+}
+
+.toosbutton ul .t4::before {
+    font-family: "bdfont";
+    content: '\e00d';
+    font-size: 20px;
+    color: #999999;
+    padding-right: 5px;
+}
+
+.r1 {
+    float: right;
+    height: 65px;
+    line-height: 65px;
+    padding-right: 30px;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.r1 a {
+    color: #333333;
+    text-decoration: underline;
+}
+
+
+/* 详细内容 */
+
+.tab {
+    width: 1137px;
+    height: 850px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    border: 1px solid #d8d8de;
+}
+
+.tab .con {
+    width: 1137px;
+    height: 1000px;
+    position: absolute;
+    display: none;
+    box-sizing: content-box
+}
+
+.tab ul {
+    background-color: #e8ebee;
+    margin: 0 auto;
+    background-color: #e8ebee;
+    border: 1px solid #d8d8de;
+    border-bottom: 0;
+    width: 1137px;
+    height: 48px;
+}
+
+.tab li {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    padding-left: 53px;
+    padding-right: 53px;
+    font-size: 18px;
+    border-right: 1px solid #d8dbde;
+}
+
+.tab .gaikuang:hover {
+    background-color: #519cea;
+}
+
+.tab a:hover {
+    color: white;
+}
+
+.tab .jianzhang:hover {
+    background-color: #519cea;
+}
+
+.tab .score:hover {
+    background-color: #519cea;
+}
+
+.tab li a {
+    color: #75787b;
+}
+
+.tab img {
+    width: 100%;
+}
+
+
+/* footer模块 */
+
+.footer {
+    padding: 40px 0 10px;
+    font-size: 12px;
+}
+
+.footer .content {
+    margin: 0 auto;
+    width: 780px;
+    height: 101px;
+}
+
+.newicon {
+    position: relative;
+}
+
+.footer .new-icon {
+    height: 7px;
+    position: absolute;
+    top: 23px;
+    right: 9px;
+}
+
+.footer .content .fresh,
+.footer .content .question,
+.footer .content .suggestion {
+    float: left;
+    padding: 0 35px 0 5px;
+    width: 250px;
+    height: 81px;
+    margin-left: 10px;
+}
+
+.footer .content dl dt {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer .content dl dd a {
+    color: #aaaaaa;
+    float: left;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.footer .content .suggestion dd a {
+    margin-right: -10px;
+}
+
+.footer .content .fresh dt::before {
+    font-family: "bdfont";
+    content: "\e004";
+    font-size: 20px;
+    color: #aaaaaa;
+    margin-right: 10px;
+}
+
+.footer .content .question dt::before {
+    font-family: "bdfont";
+    content: "\e006";
+    font-size: 20px;
+    margin-right: 10px;
+    color: #aaaaaa;
+}
+
+.footer .content .suggestion dt::before {
+    font-family: "bdfont";
+    content: "\e005";
+    font-size: 20px;
+    margin-right: 10px;
+    color: #aaaaaa;
+}
+
+.footer .copyright {
+    text-align: center;
+}
+
+.footer .recordcode {
+    text-align: center;
+}
+
+.footer .copyright a,
+.footer .recordcode a {
+    color: #658fe6;
+}
+
+.icon-police {
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    margin-right: 6px;
+    background: url(https://bkssl.bdimg.com/static/wiki-common/widget/component/footer/img/icon-police_d8a40a4.png) 0 0 no-repeat;
+    vertical-align: middle;
+    margin-top: -4px;
+}

@@ -1,0 +1,109 @@
+/**
+ * @file icon.css
+ */
+
+@font-face {
+    font-family: "bdfont";
+    src: url("bdfont.eot"); /* IE9 */
+    src: url("bdfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("bdfont.woff") format("woff"), /* chrome、firefox */
+    url("bdfont.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("bdfont.svg#uxfonteditor") format("svg"); /* iOS 4.1- */
+}
+
+
+.icon {
+    font-family: "bdfont" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-007-setting:before {
+  content: "\e001";
+}
+
+.icon-unie61c:before {
+  content: "\e002";
+}
+
+.icon-_video_126:before {
+  content: "\e003";
+}
+
+.icon-question_sign:before {
+  content: "\e004";
+}
+
+.icon-comment:before {
+  content: "\e005";
+}
+
+.icon-edit:before {
+  content: "\e006";
+}
+
+.icon-pencil:before {
+  content: "\e007";
+}
+
+.icon-comments:before {
+  content: "\e008";
+}
+
+.icon-star:before {
+  content: "\e009";
+}
+
+.icon-006-share:before {
+  content: "\e00a";
+}
+
+.icon-unie002:before {
+  content: "\e00b";
+}
+
+.icon-___63:before {
+  content: "\e00c";
+}
+
+.icon-_e61f_14:before {
+  content: "\e00d";
+}
+
+.icon-_______46:before {
+  content: "\e00e";
+}
+
+.icon-tianjia:before {
+  content: "\e00f";
+}
+
+.icon-016-weibo:before {
+  content: "\e010";
+}
+
+.icon-022-wechat:before {
+  content: "\e011";
+}
+
+.icon-017-tencent:before {
+  content: "\e012";
+}
+
+.icon-qianbaopengyou:before {
+  content: "\e013";
+}
+
+.icon-028-map:before {
+  content: "\e014";
+}
+
+
+
